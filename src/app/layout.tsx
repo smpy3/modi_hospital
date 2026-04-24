@@ -1,8 +1,9 @@
-/** Root layout: sets global metadata + wraps the app with smooth-scroll provider. */
+/** Root layout: sets global metadata, fonts, and wraps the app with smooth-scroll provider. */
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import { withBasePath } from "@/lib/assetPath";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +32,8 @@ export const metadata: Metadata = {
       "Open 24 hours • Near Aroma Circle, Highway, Palanpur, Gujarat 385001 • +91 98259 65458",
     type: "website",
   },
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  // Why: GitHub Pages deploys under a basePath for project sites; icons must respect it.
+  icons: [{ rel: "icon", url: withBasePath("/favicon.ico") }],
 };
 
 export default function RootLayout({
@@ -50,3 +52,4 @@ export default function RootLayout({
     </html>
   );
 }
+

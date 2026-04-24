@@ -16,6 +16,7 @@ import {
   X,
 } from "lucide-react";
 import { cn } from "@/lib/cn";
+import { withBasePath } from "@/lib/assetPath";
 
 type Item = {
   title: string;
@@ -40,7 +41,7 @@ export function Gallery() {
         gradient:
           "bg-[radial-gradient(circle_at_20%_20%,rgba(34,211,238,0.28),transparent_55%),radial-gradient(circle_at_75%_65%,rgba(99,102,241,0.25),transparent_55%)]",
         pill: "Surgery",
-        imageSrc: "/facilities/4.png",
+        imageSrc: withBasePath("/facilities/4.png"),
         imagePosition: "55% 45%",
       },
       {
@@ -51,7 +52,7 @@ export function Gallery() {
         gradient:
           "bg-[radial-gradient(circle_at_25%_25%,rgba(34,197,94,0.22),transparent_55%),radial-gradient(circle_at_70%_60%,rgba(34,211,238,0.22),transparent_60%)]",
         pill: "Anaesthesia",
-        imageSrc: "/facilities/2.png",
+        imageSrc: withBasePath("/facilities/2.png"),
         imagePosition: "35% 55%",
       },
       {
@@ -62,7 +63,7 @@ export function Gallery() {
         gradient:
           "bg-[radial-gradient(circle_at_25%_35%,rgba(99,102,241,0.22),transparent_60%),radial-gradient(circle_at_80%_20%,rgba(34,211,238,0.22),transparent_60%)]",
         pill: "Inpatient",
-        imageSrc: "/facilities/5.png",
+        imageSrc: withBasePath("/facilities/5.png"),
         imagePosition: "60% 50%",
       },
       {
@@ -73,7 +74,7 @@ export function Gallery() {
         gradient:
           "bg-[radial-gradient(circle_at_25%_20%,rgba(34,211,238,0.22),transparent_60%),radial-gradient(circle_at_70%_60%,rgba(168,85,247,0.18),transparent_60%)]",
         pill: "Critical care",
-        imageSrc: "/facilities/6.png",
+        imageSrc: withBasePath("/facilities/6.png"),
         imagePosition: "75% 45%",
       },
       {
@@ -84,7 +85,7 @@ export function Gallery() {
         gradient:
           "bg-[radial-gradient(circle_at_18%_22%,rgba(34,197,94,0.18),transparent_60%),radial-gradient(circle_at_75%_55%,rgba(99,102,241,0.22),transparent_60%)]",
         pill: "Orthopaedics",
-        imageSrc: "/facilities/3.png",
+        imageSrc: withBasePath("/facilities/3.png"),
         imagePosition: "60% 45%",
       },
       {
@@ -95,7 +96,7 @@ export function Gallery() {
         gradient:
           "bg-[radial-gradient(circle_at_25%_25%,rgba(99,102,241,0.20),transparent_60%),radial-gradient(circle_at_78%_45%,rgba(34,211,238,0.18),transparent_60%)]",
         pill: "Patient-first",
-        imageSrc: "/facilities/1.png",
+        imageSrc: withBasePath("/facilities/1.png"),
         imagePosition: "50% 45%",
       },
       {
@@ -107,7 +108,7 @@ export function Gallery() {
           "bg-[radial-gradient(circle_at_25%_20%,rgba(34,211,238,0.20),transparent_60%),radial-gradient(circle_at_75%_65%,rgba(34,197,94,0.16),transparent_60%)]",
         pill: "Recovery",
         // Why: we reuse a facility photo with a different crop to keep consistency across cards.
-        imageSrc: "/facilities/2.png",
+        imageSrc: withBasePath("/facilities/2.png"),
         imagePosition: "75% 35%",
       },
       {
@@ -119,7 +120,7 @@ export function Gallery() {
           "bg-[radial-gradient(circle_at_25%_20%,rgba(34,211,238,0.22),transparent_60%),radial-gradient(circle_at_70%_60%,rgba(99,102,241,0.22),transparent_60%)]",
         pill: "Always open",
         // Why: reusing a facility shot keeps the section cohesive without adding more assets.
-        imageSrc: "/facilities/1.png",
+        imageSrc: withBasePath("/facilities/1.png"),
         imagePosition: "55% 55%",
       },
     ],
