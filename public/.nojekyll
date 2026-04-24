@@ -1,0 +1,2 @@
+# Why: prevents GitHub Pages from ignoring paths like `_next/` during static hosting.
+
